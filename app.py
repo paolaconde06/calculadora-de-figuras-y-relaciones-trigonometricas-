@@ -18,7 +18,7 @@ if figura=="Circulo":
     perimetro=a+b+c
   if figura=="Rectangulo":
     b=st.number_input("Base(b):",min_value=0.0)
-    h=st.number:input("Altura(h):",min_value=0.0)
+    h=st.number_input("Altura(h):",min_value=0.0)
     area=b*h
     perimetro=a+b+c
   if figura=="Cuadrado":
