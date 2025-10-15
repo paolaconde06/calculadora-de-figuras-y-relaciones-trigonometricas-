@@ -28,4 +28,4 @@ if figura=="Circulo":
 #Mostrar resultados 
 if st.button("Calcular"):
   st.success(f"Area={area:.2f}")
-  st.success(d"Perimetro={perimetro:.2f}")
+  st.success(f"Perimetro={perimetro:.2f}")
