@@ -20,7 +20,7 @@ if figura=="Rectangulo":
   b=st.number_input("Base(b):",min_value=0.0)
   h=st.number_input("Altura(h):",min_value=0.0)
   area=b*h
-  perimetro=a+b+c
+  perimetro=2*(b+h)
 if figura=="Cuadrado":
   l=st.number_input("Lado(l):",min_value=0.0)
   area=l**2
