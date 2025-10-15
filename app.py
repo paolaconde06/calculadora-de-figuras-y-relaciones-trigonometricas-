@@ -22,5 +22,10 @@ if figura=="Circulo":
     area=b*h
     perimetro=a+b+c
   if figura=="Cuadrado":
-    l=st.number_input("Lado(l):"min_value=0.0)
-    
+    l=st.number_input("Lado(l):",min_value=0.0)
+    area=l**2
+    perimetro=4*l
+#Mostrar resultados 
+if st.button("Calcular"):
+  st.success(f"Area={area:.2f}")
+  st.success(d"Perimetro={perimetro:.2f}")
