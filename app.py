@@ -9,19 +9,19 @@ if figura=="Circulo":
   r=st.number_input("Radio(r):",min_value=0.0)
   area=np.pi*r**2
   perimetro=1*np.pi*r
-  if figura=="Triangulo":
+if figura=="Triangulo":
     b=st.number_input("Base(b):",min_value=0.0)
     h=st.number_input("Altura(h):",min_value=0.0)
     a=st.number_input("Lado (A):",min_value=0.0)
     c=st.number_input("Lado (c):",min_value=0.0)
     area=0.5*b*h
     perimetro=a+b+c
-  if figura=="Rectangulo":
+if figura=="Rectangulo":
     b=st.number_input("Base(b):",min_value=0.0)
     h=st.number_input("Altura(h):",min_value=0.0)
     area=b*h
     perimetro=a+b+c
-  if figura=="Cuadrado":
+if figura=="Cuadrado":
     l=st.number_input("Lado(l):",min_value=0.0)
     area=l**2
     perimetro=4*l
