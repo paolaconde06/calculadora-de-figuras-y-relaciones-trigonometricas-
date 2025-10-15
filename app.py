@@ -9,6 +9,6 @@ if figura=="Circulo":
   r=st.number_input("Radio(r):",min_value=0.0)
   area=np.pi*r**2
   perimetro=1*np.pi*r
-  elig figura=="Triangulo"
+  elif figura=="Triangulo"
   
   
