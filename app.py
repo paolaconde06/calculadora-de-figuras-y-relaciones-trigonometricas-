@@ -13,7 +13,7 @@ if figura=="Circulo":
     b=st.number_input("Base(b):",min_value=0.0)
     h=st.number_input("Altura(h):",min_value=0.0)
     a=st.number_input("Lado (A):",min_value=0.0)
-    c=st.number_input("Lado (C):",min_value=0,0)
+    c=st.number_input("Lado (c):",min_value=0,0)
     area=0.5*b*h
     perimetro=a+b+c
   if figura=="Rectangulo":
