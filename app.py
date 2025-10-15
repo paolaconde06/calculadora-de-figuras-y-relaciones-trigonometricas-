@@ -10,3 +10,4 @@ if figura=="Circulo":
   area=np.pi*r**2
   perimetro=1*np.pi*r
   
+  
