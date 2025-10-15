@@ -29,6 +29,4 @@ if figura=="Cuadrado":
 if st.button("Calcular"):
   st.success(f"Area={area:.2f}")
   st.success(f"Perimetro={perimetro:.2f}")
-#Parte 2 -Visualizacion
-st.header("Parte 2 -Visualizacion")
-color=st.color_picker("Selecciona un color para la figura:","
+
