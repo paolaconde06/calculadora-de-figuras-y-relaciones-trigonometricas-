@@ -34,7 +34,7 @@ st.header("Parte 2 - Visualizacion")
 color=st.color_picker("Selecciona un color para la figura:","#1f77b4")
 fig,ax=plt.subplots()
 if figura=="Circulo":
-  circle=plt.Circulo((0,0),r,color=color,fill=False)
+  circulo=plt.Circulo((0,0),r,color=color,fill=False)
   ax.add_artist(circle)
   ax.set_xlim(-r*1.2,r*1.2)
   ax.set_ylim(-r*1.2,r*1.2)
