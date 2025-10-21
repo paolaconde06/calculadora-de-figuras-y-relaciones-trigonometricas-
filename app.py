@@ -57,3 +57,16 @@ elif figura == "Triángulo":
   ax.set_ylim(-h*0.5, h*1.2)
 ax.set_aspect('equal')
 st.pyplot(fig)
+# Parte 3 — Relaciones trigonométricas
+st.header("Parte 3 — Relaciones trigonométricas")
+funcion = st.selectbox("Selecciona una función trigonométrica:", ["sin(x)", "cos(x)", "tan(x)"])
+rango = st.slider("Rango (múltiplos de π):", 1, 4, 2)
+amplitud = st.slider("Amplitud:", 0.1, 2.0, 1.0)
+x = np.linspace(0, rango * np.pi, 300)
+if funcion == "sin(x)":
+  y = amplitud * np.sin(x)
+if funcion == "cos(x)":
+  y = amplitud * np.cos(x)
+if funcion == "tan(x)":
+  y = amplitud * np.tan(x)
+  y[np.abs(y) > 10] = np.nan  # evita líneas verticales infinitas
