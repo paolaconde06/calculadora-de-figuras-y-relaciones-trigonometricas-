@@ -29,4 +29,12 @@ if figura=="Triangulo":
 if st.button("Calcular"):
   st.success(f"Area={area:.2f}")
   st.success(f"Perimetro={perimetro:.2f}")
-
+  #Visualizacion 
+st.header("Parte 2 - Visualizacion")
+color=st.color_picker("Selecciona un color para la figura:",#1f77b4")
+fig,ax=plt.subplots()
+if figura=="Circulo":
+  circle=plt.Circule((0,0),r,color=color,fill=False)
+  ax.add_artist(circle)
+  ax.set_xlim(-r*1.2,r*1.2)
+  ax.set_ylim(-r*1.2,r*1.2)
