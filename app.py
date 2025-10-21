@@ -38,3 +38,8 @@ if figura=="Circulo":
   ax.add_artist(circle)
   ax.set_xlim(-r*1.2,r*1.2)
   ax.set_ylim(-r*1.2,r*1.2)
+if figura=="Rectangulo":
+  rect=plt.Rectangle((-b/2,-h/2),b,h,color=color,fill=False)
+  ax.add_artist(rect)
+  ax.set_xlim(-b,b)
+  ax.set_ylim(-h,h)
