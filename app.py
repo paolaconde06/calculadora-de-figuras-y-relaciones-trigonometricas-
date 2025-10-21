@@ -34,22 +34,21 @@ st.header("Parte 2 - Visualizacion")
 color=st.color_picker("Selecciona un color para la figura:","#1f77b4")
 fig,ax=plt.subplots()
 if figura=="Circulo":
-  circle=plt.Circule((0,0),r,color=color,fill=False)
+  circle=plt.Circulo((0,0),r,color=color,fill=False)
   ax.add_artist(circle)
   ax.set_xlim(-r*1.2,r*1.2)
   ax.set_ylim(-r*1.2,r*1.2)
 if figura=="Rectangulo":
-  rect=plt.Rectangle((-b/2,-h/2),b,h,color=color,fill=False)
+  rect=plt.Rectangulo((-b/2,-h/2),b,h,color=color,fill=False)
   ax.add_artist(rect)
   ax.set_xlim(-b,b)
   ax.set_ylim(-h,h)
 if figura=="Cuadrado":
-  rect = plt.Rectangle((-l/2, -l/2), l, l, color=color, fill=False)
+  rect = plt.Cuadrado((-l/2, -l/2), l, l, color=color, fill=False)
   ax.add_artist(rect)
   ax.set_xlim(-l, l)
   ax.set_ylim(-l, l)
-
-elif figura == "Triángulo":
+if figura == "Triángulo":
   puntos = np.array([[0, 0], [b, 0], [b/2, h]])
   tri = plt.Polygon(puntos, color=color, fill=False)
   ax.add_artist(tri)
