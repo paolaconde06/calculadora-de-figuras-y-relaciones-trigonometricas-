@@ -31,7 +31,7 @@ if st.button("Calcular"):
   st.success(f"Perimetro={perimetro:.2f}")
   #Visualizacion 
 st.header("Parte 2 - Visualizacion")
-color=st.color_picker("Selecciona un color para la figura:",#1f77b4")
+color=st.color_picker("Selecciona un color para la figura:","#1f77b4")
 fig,ax=plt.subplots()
 if figura=="Circulo":
   circle=plt.Circule((0,0),r,color=color,fill=False)
