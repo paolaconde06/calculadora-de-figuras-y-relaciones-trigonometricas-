@@ -45,16 +45,15 @@ if figura=="Rectangulo":
   ax.set_ylim(-h,h)
 if figura=="Cuadrado":
   rect = plt.Rectangle((-l/2, -l/2), l, l, color=color, fill=False)
-    ax.add_artist(rect)
-    ax.set_xlim(-l, l)
-    ax.set_ylim(-l, l)
+  ax.add_artist(rect)
+  ax.set_xlim(-l, l)
+  ax.set_ylim(-l, l)
 
 elif figura == "Triángulo":
-    puntos = np.array([[0, 0], [b, 0], [b/2, h]])
-    tri = plt.Polygon(puntos, color=color, fill=False)
-    ax.add_artist(tri)
-    ax.set_xlim(-b/2, b*1.2)
-    ax.set_ylim(-h*0.5, h*1.2)
-
+  puntos = np.array([[0, 0], [b, 0], [b/2, h]])
+  tri = plt.Polygon(puntos, color=color, fill=False)
+  ax.add_artist(tri)
+  ax.set_xlim(-b/2, b*1.2)
+  ax.set_ylim(-h*0.5, h*1.2)
 ax.set_aspect('equal')
 st.pyplot(fig)
